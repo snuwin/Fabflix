@@ -1,0 +1,126 @@
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8c471;
+}
+
+/* Search Bar */
+#search-controls {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#search-input {
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Sort Controls */
+#sort-controls label {
+    font-weight: bold;
+}
+
+/* Autocomplete Suggestions */
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #FFF;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-selected {
+    background: #F0F0F0;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #3399FF;
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+/* Movie Posters */
+#movie-posters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#movie-posters div {
+    margin: 15px;
+    text-align: center;
+}
+
+#movie-posters img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#movie-posters div div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+#movie-posters img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#movie-posters div span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Background and Layout Enhancements */
+body {
+    background-color: #121212;
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #FFF;
+}
+

@@ -1,0 +1,129 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-star.js to populate the data into empty elements.
+    -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <style>
+        body {
+            background-color: #302d35;
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            white-space: nowrap; /* Prevent text from wrapping */
+            text-overflow: ellipsis; /* Display an ellipsis (...) when the text overflows */
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;}
+            h3 {
+            font-family: Gill Sans, Verdana;
+            font-size: 11px;
+            line-height: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+                color: antiquewhite;
+        }
+
+        h2 {
+            font-family: times, Times New Roman, times-roman, georgia, serif;
+            color: antiquewhite;
+            margin: 0;
+            padding: 0px 0px 6px 0px;
+            font-size: 30px;
+            line-height: 44px;
+            letter-spacing: -2px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Style for the table */
+        #movie_table {
+            background-color: #D9D0C6; /* Set background color */
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px solid black;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Style for table header */
+        #movie_table th {
+            background-color: #D9D0C6;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        #movie_table tbody td {
+            text-align: center;
+            padding: 10px;
+            background-color: #DFD6CD;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #6A625A;
+            color: #D3CEC9;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: times, Times New Roman, times-roman, georgia, serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    <a href="index.html" class="btn btn-primary">Go Back to Movies</a>
+
+
+<h2 id="star_info"></h2>
+<table id=movie_table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Movies</th>
+    </tr>
+    </thead>
+
+
+    <tbody id=star_table_body></tbody>
+</table>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="single-star.js"></script>
+</body>
+
+
+</html>

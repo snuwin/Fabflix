@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabflix | Advanced Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="res/css/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Fabflix</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="browse.html">Browse Movies</a></li>
+            <li><a href="index.html">Search Movies</a></li>
+            <li><a href="ShoppingCart.html">Checkout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<br>
+
+<div class="page-header">
+    <h2 class="text-center">Search for Movies</h2>
+</div>
+
+<div class="container">
+    <form id="search_form" method="GET" action="index.html">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Enter movie title here.." name="title">
+        </div>
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="text" class="form-control" id="year" placeholder="Enter year released here.." name="year">
+        </div>
+        <div class="form-group">
+            <label for="director">Director</label>
+            <input type="text" class="form-control" id="director" placeholder="Enter director name here.." name="director">
+        </div>
+        <div class="form-group">
+            <label for="star">Star's Name</label>
+            <input type="text" class="form-control" id="star" placeholder="Enter star's name here.." name="star">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- include our own JS file -->
+<!--<script src="search.js"></script>-->
+</body>
+</html>

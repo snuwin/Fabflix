@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <style>
+        body {
+            background-color: #302d35;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        h3 {
+            font-family: Gill Sans, Verdana;
+            font-size: 11px;
+            line-height: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: antiquewhite;
+        }
+
+        h2 {
+            font-family: times, Times New Roman, times-roman, georgia, serif;
+            color: antiquewhite;
+            margin: 0;
+            padding: 0px 0px 6px 0px;
+            font-size: 30px;
+            line-height: 44px;
+            letter-spacing: -2px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #movie_table {
+            background-color: #D9D0C6;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px solid black;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #movie_table th {
+            background-color: #D9D0C6;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        #movie_table tbody td {
+            text-align: center;
+            padding: 10px;
+            background-color: #DFD6CD;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #6A625A;
+            color: #D3CEC9;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: times, Times New Roman, times-roman, georgia, serif;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: #403B36;
+        }
+
+    </style>
+
+    <title>Single Movie Page</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Fabflix</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="browse.html">Browse Movies</a></li>
+            <li><a href="index.html">Search Movies</a></li>
+            <li><a href="ShoppingCart.html">Checkout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h2 id="movie_title_body"></h2>
+
+<table id="movie_table" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Release Year</th>
+        <th>Director</th>
+        <th>Genres</th>
+        <th>Stars</th>
+        <th>Rating</th>
+    </tr>
+    </thead>
+    <tbody id="single_movie_table_body"></tbody>
+</table>
+
+<div style="text-align: center;">
+    <button id="add-to-cart-button" class="btn btn-primary">Add to Cart</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="single-movie.js"></script>
+
+</body>
+</html>

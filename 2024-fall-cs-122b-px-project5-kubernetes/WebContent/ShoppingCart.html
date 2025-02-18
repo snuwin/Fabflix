@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <h1>My Shopping Cart</h1>
+    <a href="index.html"><h3>Back to Movie List</h3></a>
+    <h2>My Items:</h2>
+    <table id="shoppingcart_table" class="table table-striped">
+        <thead>
+        <tr>
+            <th>Item Name:</th>
+            <th>Item Quantity:</th>
+            <th>Item Price (Individual):</th>
+            <th>Item Total:</th>
+        </tr>
+        </thead>
+        <tbody id="shoppingcart_table_body"></tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">Total Price:</td>
+            <td id="total_cost">$</td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <form action="PaymentPage.html" method="get">
+        <button type="submit" class="button-link">Proceed to Payment</button>
+    </form>
+
+
+
+    <!-- Load jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Load our own JS file -->
+    <!-- The path is relative to ShoppingCart.html, since these two files are in the same directory -->
+    <!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+         otherwise the url is relative to the root path-->
+    <script src="ShoppingCart.js"></script>
+</body>
+</html>

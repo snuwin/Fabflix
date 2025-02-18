@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabflix</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-color: #302d35;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-container {
+      background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 60px;
+      margin-bottom: 50px;
+    }
+
+    button, .login-button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 16px;
+      border: none;
+      background-color: #302d35;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover, .login-button:hover {
+      background-color: #201e23;
+    }
+
+    .login-button {
+      background-color: #b63139; /* Red color */
+      transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+    .login-button:hover {
+      background-color: #731c24; /* Darker red on hover */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="content-container">
+  <div class="container">
+    <h1>Fabflix</h1>
+    <button onclick="window.location.href='search.html'">Search</button>
+    <button onclick="window.location.href='browse.html'">Browse</button>
+    <a href="login.html" class="login-button">Login</a>
+  </div>
+</div>
+</body>
+</html>
+
+

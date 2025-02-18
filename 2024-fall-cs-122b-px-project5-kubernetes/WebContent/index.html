@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fabflix</title>
+
+    <!-- Include CSS for jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="res/css/index.css">
+
+    <!-- Additional Inline Styles -->
+    <style>
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .navbar-brand:hover {
+            color: #f8c471;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar-nav li {
+            margin: 0 10px;
+        }
+
+        .navbar-nav a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .navbar-nav a:hover {
+            color: #f8c471;
+        }
+
+        #search-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+        }
+
+        #search-input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f8c471;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #search-button:hover {
+            background-color: #f39c12;
+        }
+
+        #sort-controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Adjustments for search bar placement */
+        .content {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Fabflix</a>
+    </div>
+    <ul class="navbar-nav">
+        <li><a href="browse.html">Browse Movies</a></li>
+        <li><a href="index.html">Search Movies</a></li>
+        <li><a href="ShoppingCart.html">Checkout</a></li>
+    </ul>
+</nav>
+
+<!-- Title -->
+<h1>Fabflix</h1>
+
+<!-- Search Bar -->
+<div id="search-bar-container">
+    <input id="search-input" type="text" placeholder="Search for a movie..." />
+    <button id="search-button">Search</button>
+</div>
+
+<!-- Sort Controls -->
+<div id="sort-controls">
+    <label for="primary-sort-by">Primary Sort by:</label>
+    <select id="primary-sort-by">
+        <option value="title">Title</option>
+        <option value="rating">Rating</option>
+    </select>
+
+    <label for="primary-sort-order">Primary Order:</label>
+    <select id="primary-sort-order">
+        <option value="ASC">Ascending</option>
+        <option value="DESC">Descending</option>
+    </select>
+
+    <label for="secondary-sort-by">Secondary Sort by:</label>
+    <select id="secondary-sort-by">
+        <option value="title">Title</option>
+        <option value="rating">Rating</option>
+    </select>
+
+    <label for="secondary-sort-order">Secondary Order:</label>
+    <select id="secondary-sort-order">
+        <option value="ASC">Ascending</option>
+        <option value="DESC">Descending</option>
+    </select>
+</div>
+
+<!-- Movie Posters -->
+<div id="movie-posters" style="display: flex; flex-wrap: wrap; justify-content: center; margin: 20px 0;"></div>
+
+<!-- Include jQuery Core and UI Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<!-- Include Custom JS -->
+<script src="index.js"></script>
+
+</body>
+</html>

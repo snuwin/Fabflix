@@ -1,0 +1,113 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to Fablix</title>
+
+    <!-- Complete CSS -->
+    <style>
+        /* Inline CSS for background image */
+        .login-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+        .login-box {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-box h1 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .login-box p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #333;
+            text-align: left;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0 1rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .login-box a {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body class="login-body">
+<div id="app" class="login-box">
+    <h1>
+        <strong>Login</strong>
+    </h1>
+    <form id="login_form" method="post" action="#" v-on:submit.prevent=handleSubmit>
+        <p>Email</p>
+        <input type="text" name="email" placeholder="Enter Email"
+               v-model="form.email">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter Password"
+               v-model="form.password">
+        <input type="submit" name="submit" value="Login">
+        <a href="_dashboard.html">Employee's Login</a>
+        <a href="#">Forgot Password?</a>
+    </form>
+
+    <div id="login_error_message">{{ info.message }}</div>
+</div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<!-- Include Axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<!-- include our own JS file -->
+<script src="login.js"></script>
+
+</body>
+</html>

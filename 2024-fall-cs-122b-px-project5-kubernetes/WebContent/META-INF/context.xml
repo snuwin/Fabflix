@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <!-- Defines a Data Source Connecting to localhost moviedb -->
+    <Resource name="jdbc/MySQLReadWrite"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://mysql-primary:3306/moviedb?autoReconnect=true&amp;useSSL=false&amp;cachePrepStmts=true"
+              maxTotal="50"
+              maxIdle="10"
+              maxWaitMillis="10000" />
+
+    <!-- Read-Only Data Source Configuration -->
+    <Resource name="jdbc/MySQLReadOnly"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://mysql-secondary:3306/moviedb?autoReconnect=true&amp;useSSL=false&amp;cachePrepStmts=true"
+              maxTotal="50"
+              maxIdle="10"
+              maxWaitMillis="10000" />
+</Context>
