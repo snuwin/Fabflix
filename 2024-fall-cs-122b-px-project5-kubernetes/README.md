@@ -1,3 +1,30 @@
-1 Control Plane + 3 Worker nodes + 1 master MySQL pod + 1 slave MySQL pod + 2 Fabflix pods = 13,167.65/minute
-1 Control Plane + 4 Worker nodes + 1 master MySQL pod + 1 slave MySQL pod + 3 Fabflix pods = 13,377.193/minute
-Demo: https://youtu.be/Om9qPv4aE9A
+# FABFLIX E-COMMERCE MOVIE WEBSITE
+** Author of README: Serena Nguyen **
+
+** Project Overview **
+This project is a full-stack e-commerce web application designed for movie data exploration and transaction simulation.
+Developed in CS122B (Fall 2025) at University of California, Irvine.
+
+** Team Members **
+- Serena Nguyen: Application Development (Java Servlets, REST APIs, Frontend/UI, Security);
+- Phillip Nguyen: Infrastructure Deployment (Kubernetes Cluster, YAML Configurations, Load Balancing);
+
+# System Architecture 
+- BackEnd: Java Servlets, RESTful APIs, MySQL (Master-Slave Replication), Prepared Statements
+- FrontEnd: HTML/CSS, JavaScript, AJAX
+- Security: SQL Injection Prevention, Google reCAPTCHA Integration, Session-Based Login
+- Infrastructure: Kubernetes Cluster with 1 Control Plane, Worker Nodes, Pod Auto-Scaling
+
+ ** Demo Video **: [Youtube Demo] https://youtu.be/Om9qPv4aE9A
+
+# Performance Metrics:
+| Cluster Configuration                                  | Throughput (transactions/second) |
+|--------------------------------------------------------|----------------------------------|
+| 1 CP + 3 Workers + 2 Fabflix Pods                      | ~219.46 transactions/sec         |
+| 1 CP + 4 Workers + 3 Fabflix Pods                      | ~222.95 transactions/sec         |
+_Metrics originally reported per minute; converted to per second for industry-standard readability._
+
+## Testing & Observations:
+- Simulated high-concurrency user load using JMeter for stress testing and throughput benchmarking
+- Increased worker nodes and Fabflix pods marginally improved throughput
+- The project emphasized clean separation of backend (Java Servlets, RESTful APIs) and frontend (AJAX, HTML/CSS), promoting modular development and scalability.
