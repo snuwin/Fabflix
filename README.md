@@ -1,8 +1,8 @@
 # FABFLIX E-COMMERCE MOVIE WEBSITE
-** Author of README: Serena Nguyen **
-** Co-Developer: Phillip Nguyen **
+Author of README: Serena Nguyen
+Co-Developer: Phillip Nguyen
 
-** Project Overview **
+**Project Overview**
 This project is a full-stack e-commerce web application designed for movie data exploration and transaction simulation.
 Developed in CS122B (Fall 2025) at University of California, Irvine.
 
