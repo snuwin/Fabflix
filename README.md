@@ -1,5 +1,6 @@
 # FABFLIX E-COMMERCE MOVIE WEBSITE
 Author of README: Serena Nguyen
+
 Co-Developer: Phillip Nguyen
 
 **Project Overview**
