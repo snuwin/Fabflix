@@ -6,6 +6,7 @@
 
 
  **Demo Video** : [Youtube Demo] https://youtu.be/Om9qPv4aE9A
+ 
 **Project Overview**
 This project is a full-stack e-commerce web application designed for movie data exploration and transaction simulation.
 Developed in CS122B (Fall 2025) at University of California, Irvine.
