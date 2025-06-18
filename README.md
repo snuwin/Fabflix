@@ -1,8 +1,7 @@
 # FABFLIX E-COMMERCE MOVIE WEBSITE
 
 **Team Members & Contributions**
-- Serena Nguyen: Application Development (Java Servlets, REST APIs, Frontend/UI, Security) + README;
-- Phillip Nguyen: Infrastructure Deployment (Kubernetes Cluster, YAML Configurations, Load Balancing);
+Serena Nguyen & Phillip Nguyen: Joint development of application features, frontend/UI design, backend integration (Java Servlets, REST APIs), and deployment infrastructure (Kubernetes, YAML, Load Balancing, Security)
 
 
  **Demo Video** : [Youtube Demo] https://youtu.be/Om9qPv4aE9A
